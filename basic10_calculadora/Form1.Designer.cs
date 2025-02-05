@@ -47,6 +47,7 @@
             this.btn_0 = new System.Windows.Forms.Button();
             this.btn_ponto = new System.Windows.Forms.Button();
             this.btn_barra = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtB_calc
@@ -278,11 +279,22 @@
             this.btn_barra.Text = "/";
             this.btn_barra.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(123, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(141, 20);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "CALCULADORA";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(399, 308);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_barra);
             this.Controls.Add(this.btn_ponto);
             this.Controls.Add(this.btn_0);
@@ -330,6 +342,7 @@
         private System.Windows.Forms.Button btn_0;
         private System.Windows.Forms.Button btn_ponto;
         private System.Windows.Forms.Button btn_barra;
+        private System.Windows.Forms.Label label1;
     }
 }
 
