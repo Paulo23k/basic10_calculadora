@@ -48,6 +48,7 @@
             this.btn_ponto = new System.Windows.Forms.Button();
             this.btn_barra = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label_operacao = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtB_calc
@@ -55,10 +56,12 @@
             this.txtB_calc.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtB_calc.Font = new System.Drawing.Font("News706 BT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtB_calc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtB_calc.Location = new System.Drawing.Point(46, 47);
+            this.txtB_calc.Location = new System.Drawing.Point(46, 50);
             this.txtB_calc.Name = "txtB_calc";
             this.txtB_calc.Size = new System.Drawing.Size(306, 27);
             this.txtB_calc.TabIndex = 0;
+            this.txtB_calc.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtB_calc.TextChanged += new System.EventHandler(this.txtB_calc_TextChanged);
             // 
             // btn_7
             // 
@@ -84,6 +87,7 @@
             this.btn_8.TabIndex = 2;
             this.btn_8.Text = "8";
             this.btn_8.UseVisualStyleBackColor = false;
+            this.btn_8.Click += new System.EventHandler(this.btn_8_Click);
             // 
             // btn_9
             // 
@@ -96,6 +100,7 @@
             this.btn_9.TabIndex = 3;
             this.btn_9.Text = "9";
             this.btn_9.UseVisualStyleBackColor = false;
+            this.btn_9.Click += new System.EventHandler(this.btn_9_Click);
             // 
             // btn_mais
             // 
@@ -108,6 +113,7 @@
             this.btn_mais.TabIndex = 4;
             this.btn_mais.Text = "+";
             this.btn_mais.UseVisualStyleBackColor = false;
+            this.btn_mais.Click += new System.EventHandler(this.btn_mais_Click);
             // 
             // btn_ce
             // 
@@ -132,6 +138,7 @@
             this.btn_4.TabIndex = 6;
             this.btn_4.Text = "4";
             this.btn_4.UseVisualStyleBackColor = false;
+            this.btn_4.Click += new System.EventHandler(this.btn_4_Click);
             // 
             // btn_5
             // 
@@ -144,6 +151,7 @@
             this.btn_5.TabIndex = 7;
             this.btn_5.Text = "5";
             this.btn_5.UseVisualStyleBackColor = false;
+            this.btn_5.Click += new System.EventHandler(this.btn_5_Click);
             // 
             // btn_6
             // 
@@ -156,6 +164,7 @@
             this.btn_6.TabIndex = 8;
             this.btn_6.Text = "6";
             this.btn_6.UseVisualStyleBackColor = false;
+            this.btn_6.Click += new System.EventHandler(this.btn_6_Click);
             // 
             // btn_menos
             // 
@@ -192,6 +201,7 @@
             this.btn_1.TabIndex = 11;
             this.btn_1.Text = "1";
             this.btn_1.UseVisualStyleBackColor = false;
+            this.btn_1.Click += new System.EventHandler(this.btn_1_Click);
             // 
             // btn_2
             // 
@@ -217,6 +227,7 @@
             this.btn_3.TabIndex = 13;
             this.btn_3.Text = "3";
             this.btn_3.UseVisualStyleBackColor = false;
+            this.btn_3.Click += new System.EventHandler(this.btn_3_Click);
             // 
             // btn_multi
             // 
@@ -241,6 +252,7 @@
             this.btn_igual.TabIndex = 15;
             this.btn_igual.Text = "=";
             this.btn_igual.UseVisualStyleBackColor = false;
+            this.btn_igual.Click += new System.EventHandler(this.btn_igual_Click);
             // 
             // btn_0
             // 
@@ -253,6 +265,7 @@
             this.btn_0.TabIndex = 16;
             this.btn_0.Text = "0";
             this.btn_0.UseVisualStyleBackColor = false;
+            this.btn_0.Click += new System.EventHandler(this.btn_0_Click);
             // 
             // btn_ponto
             // 
@@ -289,11 +302,21 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "CALCULADORA";
             // 
+            // label_operacao
+            // 
+            this.label_operacao.AutoSize = true;
+            this.label_operacao.BackColor = System.Drawing.Color.Transparent;
+            this.label_operacao.Location = new System.Drawing.Point(53, 54);
+            this.label_operacao.Name = "label_operacao";
+            this.label_operacao.Size = new System.Drawing.Size(0, 13);
+            this.label_operacao.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(399, 308);
+            this.ClientSize = new System.Drawing.Size(391, 306);
+            this.Controls.Add(this.label_operacao);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_barra);
             this.Controls.Add(this.btn_ponto);
@@ -343,6 +366,7 @@
         private System.Windows.Forms.Button btn_ponto;
         private System.Windows.Forms.Button btn_barra;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_operacao;
     }
 }
 
